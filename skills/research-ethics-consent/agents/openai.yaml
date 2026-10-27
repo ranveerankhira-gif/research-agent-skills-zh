@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研伦理与知情同意"
+  short_description: "审计参与者风险、知情同意、隐私和伦理审查准备材料"
+  default_prompt: "使用 $research-ethics-consent 审计这项涉及人的研究，区分通用伦理建议与机构必须决定的事项。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "文献证据核验"
+  short_description: "核对引用存在性、元数据和主张证据对应关系"
+  default_prompt: "使用 $literature-evidence-checker 核验这些引用及其对正文主张的支持程度。"
+policy:
+  allow_implicit_invocation: true
+

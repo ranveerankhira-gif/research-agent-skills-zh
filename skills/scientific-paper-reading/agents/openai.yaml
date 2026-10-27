@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研论文深读"
+  short_description: "按页码和图表追踪单篇论文的方法、结果与局限"
+  default_prompt: "使用 $scientific-paper-reading 深读这篇论文，并把关键判断定位到原文。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "科研全流程助手"
+  short_description: "按证据状态推进选题、研究设计、写作与投稿"
+  default_prompt: "使用 $research-workflow 按证据优先原则推进这项跨阶段科研任务。"
+policy:
+  allow_implicit_invocation: false
+

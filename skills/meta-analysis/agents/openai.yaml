@@ -1,0 +1,6 @@
+interface:
+  display_name: "元分析"
+  short_description: "严谨合并多项研究效应量，并报告异质性、预测区间与结论边界"
+  default_prompt: "使用 $meta-analysis 审查输入条件并完成元分析；先确认效应量尺度、方向和研究独立性，再报告模型、异质性、预测区间及局限。"
+policy:
+  allow_implicit_invocation: false

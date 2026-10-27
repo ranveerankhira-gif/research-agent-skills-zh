@@ -1,0 +1,6 @@
+interface:
+  display_name: "定性研究分析"
+  short_description: "严谨处理访谈、田野笔记、编码、主题与定性研究审计"
+  default_prompt: "使用 $qualitative-research-analysis 分析这些定性研究材料，保留引文溯源、反例和研究者解释边界。"
+policy:
+  allow_implicit_invocation: false

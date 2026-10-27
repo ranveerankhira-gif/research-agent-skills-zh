@@ -1,0 +1,6 @@
+interface:
+  display_name: "参考文献管理"
+  short_description: "离线整理、规范化和去重参考文献，并安全生成可审计的 BibTeX 与 CSL-JSON"
+  default_prompt: "使用 $citation-management 整理参考文献元数据、识别重复或版本关系，并输出保留来源状态的引文库。"
+policy:
+  allow_implicit_invocation: true

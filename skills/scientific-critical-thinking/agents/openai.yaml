@@ -1,0 +1,7 @@
+interface:
+  display_name: "科研证据批判与偏倚评估"
+  short_description: "核验风险偏倚、GRADE证据确定性并说明判断依据"
+  default_prompt: "使用 $scientific-critical-thinking 对这项指定结果进行风险偏倚和证据确定性评估。"
+
+policy:
+  allow_implicit_invocation: true

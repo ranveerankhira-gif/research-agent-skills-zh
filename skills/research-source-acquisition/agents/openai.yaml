@@ -1,0 +1,7 @@
+interface:
+  display_name: "科研数据与论文获取"
+  short_description: "实测并取得科研论文、数据文件与受限来源"
+  default_prompt: "使用 $research-source-acquisition 查找并实际取得我需要的论文或科研数据，保留来源、权限和完整性证据。"
+policy:
+  allow_implicit_invocation: false
+

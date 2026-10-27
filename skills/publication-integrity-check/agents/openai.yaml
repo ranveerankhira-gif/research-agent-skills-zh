@@ -1,0 +1,6 @@
+interface:
+  display_name: "出版诚信与期刊核验"
+  short_description: "核验论文状态、期刊身份与投稿风险，以及用户指定的署名和披露规则"
+  default_prompt: "使用 $publication-integrity-check，以可追溯的当前证据核验论文状态、期刊风险或用户明确指定的署名与披露规则。"
+policy:
+  allow_implicit_invocation: true

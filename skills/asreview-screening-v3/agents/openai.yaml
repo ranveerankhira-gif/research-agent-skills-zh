@@ -1,0 +1,7 @@
+interface:
+  display_name: "系统综述智能筛选"
+  short_description: "使用 ASReview 3 辅助大规模题录优先筛选并保留人工决策与审计记录"
+  default_prompt: "使用 $asreview-screening-v3 规划或审计安全的 ASReview 3 题录筛选流程；安装或真实运行前先列出权限和写入范围。"
+policy:
+  allow_implicit_invocation: false
+

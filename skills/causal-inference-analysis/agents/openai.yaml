@@ -1,0 +1,6 @@
+interface:
+  display_name: "因果推断分析"
+  short_description: "先核查因果识别假设，再实施准实验与观察性效应估计"
+  default_prompt: "使用 $causal-inference-analysis 审计这个因果问题，先说明目标估计量和识别假设，再选择方法。"
+policy:
+  allow_implicit_invocation: false

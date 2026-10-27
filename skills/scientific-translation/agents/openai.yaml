@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研论文忠实翻译"
+  short_description: "保留公式、数字、引用与限定语的科研材料翻译"
+  default_prompt: "使用 $scientific-translation 忠实翻译这份科研材料，并单独标出歧义。"
+policy:
+  allow_implicit_invocation: true

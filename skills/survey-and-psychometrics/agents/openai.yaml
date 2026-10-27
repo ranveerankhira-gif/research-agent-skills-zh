@@ -1,0 +1,6 @@
+interface:
+  display_name: "问卷与量表研究"
+  short_description: "设计科研问卷，并严谨评估量表的信度、效度与可比性"
+  default_prompt: "使用 $survey-and-psychometrics 审计这份科研问卷或量表，区分题项质量、信度和效度证据。"
+policy:
+  allow_implicit_invocation: false

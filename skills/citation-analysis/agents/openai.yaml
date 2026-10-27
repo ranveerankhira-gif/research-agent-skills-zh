@@ -1,0 +1,7 @@
+interface:
+  display_name: "文献计量与引文网络分析"
+  short_description: "分析共引、文献耦合、合作网络和引用指标，并明确数据与解释边界"
+  default_prompt: "使用 $citation-analysis 对这组论文进行可追溯的文献计量与引文网络分析。"
+
+policy:
+  allow_implicit_invocation: true

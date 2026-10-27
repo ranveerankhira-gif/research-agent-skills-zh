@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-26",
+  "policy": {
+    "allowed_classifications": [
+      "self-authored",
+      "substantially-adapted"
+    ],
+    "substantial_adaptation_requires": [
+      "fixed upstream repository and revision",
+      "upstream license preserved inside the Skill directory",
+      "SOURCE.md describing concrete structural and behavioral changes",
+      "changes beyond renaming, translation, trigger edits, or safety notes"
+    ]
+  },
+  "skills": [
+    {
+      "name": "academic-literature-search",
+      "classification": "substantially-adapted",
+      "license": "MIT",
+      "evidence": [
+        "The local SKILL.md has low textual overlap with the pinned upstream and no longer uses its PubMed MCP or embedded citation-formatting workflow.",
+        "The public copy adds an independently implemented five-source PowerShell searcher and separate evidence and routing references."
+      ],
+      "upstream": {
+        "repository": "https://github.com/beita6969/ScienceClaw",
+        "path": "skills/academic-literature-search",
+        "revision": "640dfb06a246ebdcf49a469d77b7a4a86e64b5c0"
+      }
+    },
+    {
+      "name": "asreview-screening-v3",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record and subsequent local authoring are present.",
+        "The Skill is a bounded ASReview 3 workflow rather than a copied third-party package."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "causal-inference-analysis",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "The local design-first audit workflow and its two references differ structurally from public same-name implementation/code-template Skills.",
+        "No copied scripts, templates, or matching upstream file set were found."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "citation-analysis",
+      "classification": "substantially-adapted",
+      "license": "MIT",
+      "evidence": [
+        "The local SKILL.md has low textual overlap with the pinned one-file upstream.",
+        "The local version replaces the execution examples and tool binding with a new auditable corpus/network workflow and a detailed methods-and-boundaries reference."
+      ],
+      "upstream": {
+        "repository": "https://github.com/beita6969/ScienceClaw",
+        "path": "skills/citation-analysis",
+        "revision": "640dfb06a246ebdcf49a469d77b7a4a86e64b5c0"
+      }
+    },
+    {
+      "name": "citation-management",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "The local ledger script, tests, metadata contract, and file structure are independent of audited same-name public Skills."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "dryad-data-fetcher",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical records show it was created after direct Dryad and Anubis testing.",
+        "Its partial-download, HTML rejection, hash verification, collision handling, module, and tests were implemented locally."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "literature-evidence-checker",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created locally from the user's research prompt materials after 41 external candidates were audited but not installed.",
+        "Its claim ledger and verification protocol were authored for the local evidence-status workflow."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "literature-review",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "The local protocol and synthesis references do not copy the audited K-Dense or ScienceClaw file sets."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "meta-analysis",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "The independent Python estimator, tests, input contract, and methodology reference are absent from the audited same-name upstream."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "paper-review-reviser",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created locally from the user's research prompt materials after external candidates were rejected.",
+        "The review rubric and evidence-preserving revision workflow were authored locally."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "publication-integrity-check",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "The article-status, journal-risk, and authorship/disclosure references are a locally assembled bounded workflow."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "qualitative-research-analysis",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created as part of the local research-methods suite.",
+        "No copied scripts, templates, or matching third-party file set were found; the method-selection and quality-reporting references are local."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "research-ethics-consent",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created as part of the local research-methods suite.",
+        "Its consent/privacy and ethics-review references have low overlap with audited same-name public material and no copied file set."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "research-prose-naturalizer",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "It is a narrow evidence-preserving prose editor and does not redistribute the excluded third-party humanizer Skill."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "research-reproducibility-auditor",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "Its three reproducibility references are an independent local implementation with low overlap to public similarly named Skills."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "research-source-acquisition",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created from the user's live research-source acquisition work and provenance ladder.",
+        "The source matrix, access policy, NBS helper, and acquisition protocol are local implementations."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "research-workflow",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created locally from the user's research prompt materials after external candidates were audited and not installed.",
+        "Its evidence protocol, discipline adapters, and prompt-library routing were locally restructured."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "classification": "substantially-adapted",
+      "license": "MIT",
+      "evidence": [
+        "The local SKILL.md has low textual overlap and shares no exact files with the pinned nine-file upstream set.",
+        "It replaces the broad tool and generation workflow with a new RoB 2, ROBINS-I, QUADAS-3, AMSTAR 2, and GRADE routing and evidence-status contract."
+      ],
+      "upstream": {
+        "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "path": "scientific-critical-thinking",
+        "revision": "a92663a0214b3b9fa1ba6b958284ffd919c00a0c"
+      }
+    },
+    {
+      "name": "scientific-paper-reading",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record and an explicit SOURCE.md independence statement are present.",
+        "Audited third-party workflows were not copied or installed."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "scientific-translation",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record and an explicit SOURCE.md independence statement are present.",
+        "The audited baoyu-translate scripts, configuration, and workflow were not copied."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "scientific-writing",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical local init_skill.py creation record is present.",
+        "The local evidence-intake and reporting-integrity design has low overlap and a different file set from audited public same-name Skills."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "survey-and-psychometrics",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created as part of the local research-methods suite.",
+        "The questionnaire-design and psychometric-validation references are local and no copied third-party file set was found."
+      ],
+      "upstream": null
+    }
+  ],
+  "excluded": [
+    {
+      "name": "research-grants",
+      "reason": "The main SKILL.md was heavily rewritten, but twelve upstream reference and template files remain byte-identical. The package as a whole does not meet the substantial-adaptation threshold.",
+      "upstream": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/a1043ef544e3a100c28e70a736b6cf32554d0677/skills/research-grants"
+    }
+  ]
+}

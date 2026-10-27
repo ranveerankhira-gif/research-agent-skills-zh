@@ -1,0 +1,7 @@
+interface:
+  display_name: "论文修改审阅"
+  short_description: "审阅论文证据、论证、方法透明度与可读性"
+  default_prompt: "使用 $paper-review-reviser 审阅并修订这份论文，同时保留证据缺口。"
+policy:
+  allow_implicit_invocation: false
+

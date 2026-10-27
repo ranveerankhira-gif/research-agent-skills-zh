@@ -1,0 +1,6 @@
+interface:
+  display_name: "学术文献检索"
+  short_description: "只读检索公开学术数据库，并返回可追溯的论文题录和检索记录"
+  default_prompt: "使用 $academic-literature-search 从合适的公开学术数据库检索论文，并说明来源、检索式、时间和覆盖局限。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研去模板腔"
+  short_description: "保留证据与原意，减少科研稿件的机械模板表达"
+  default_prompt: "使用 $research-prose-naturalizer 修改这段科研稿件的模板化表达，并保持全部事实、数字、引用与不确定性边界不变。"
+policy:
+  allow_implicit_invocation: false

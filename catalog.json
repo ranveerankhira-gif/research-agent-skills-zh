@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "repository": "ranveerankhira-gif/research-agent-skills-zh",
+  "skills": [
+    {
+      "name": "academic-literature-search",
+      "display_name_zh": "学术文献检索",
+      "purpose_zh": "从公开学术数据库检索论文与题录元数据",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": false,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "PowerShell 7+（运行五个公开学术接口的只读检索器）"
+      ],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT (adapted; see local license/source files)",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "citation-analysis",
+      "display_name_zh": "文献计量与引文网络分析",
+      "purpose_zh": "开展有边界的文献计量与引文网络分析",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "可选 Skill：academic-literature-search（需要联网补充公开题录或引用关系时）"
+      ],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT (adapted; see local license/source files)",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "citation-management",
+      "display_name_zh": "参考文献管理",
+      "purpose_zh": "离线规范化、去重和导出参考文献",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "Python 3.10+（运行离线 CSL-JSON 台账与 BibTeX 导出脚本）"
+      ],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "literature-evidence-checker",
+      "display_name_zh": "文献证据核验",
+      "purpose_zh": "核验引用、书目信息与主张对应关系",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "可选 Skill：academic-literature-search（需要公开题录检索时）"
+      ],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "literature-review",
+      "display_name_zh": "文献综述",
+      "purpose_zh": "规划和执行可复现的文献综述",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "可选 Skill：academic-literature-search（执行公开数据库检索）",
+        "可选 Skill：citation-management（整理和去重检索记录）",
+        "可选 Skill：literature-evidence-checker（核验关键引用与主张）"
+      ],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "publication-integrity-check",
+      "display_name_zh": "出版诚信与期刊核验",
+      "purpose_zh": "核验论文状态、期刊身份与出版诚信风险",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "causal-inference-analysis",
+      "display_name_zh": "因果推断分析",
+      "purpose_zh": "规划、审计与解释观察性因果分析",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "meta-analysis",
+      "display_name_zh": "元分析",
+      "purpose_zh": "严谨合并研究效应量并报告异质性",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "Python 3.10+（运行无第三方依赖的基础元分析脚本）"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "qualitative-research-analysis",
+      "display_name_zh": "定性研究分析",
+      "purpose_zh": "分析访谈、观察和开放题等定性材料",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "research-ethics-consent",
+      "display_name_zh": "科研伦理与知情同意",
+      "purpose_zh": "准备或审计研究伦理与知情同意材料",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "survey-and-psychometrics",
+      "display_name_zh": "问卷与量表研究",
+      "purpose_zh": "设计、修订和审计问卷与心理测量",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "paper-review-reviser",
+      "display_name_zh": "论文修改审阅",
+      "purpose_zh": "审阅或修订现有科研稿件",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "research-prose-naturalizer",
+      "display_name_zh": "科研去模板腔",
+      "purpose_zh": "在保持事实与引用不变时减少科研模板腔",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "research-workflow",
+      "display_name_zh": "科研全流程助手",
+      "purpose_zh": "协调多阶段端到端科研工作流",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "display_name_zh": "科研证据批判与偏倚评估",
+      "purpose_zh": "评估风险偏倚与证据确定性",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT (adapted; see local license/source files)",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "scientific-paper-reading",
+      "display_name_zh": "科研论文深读",
+      "purpose_zh": "深读单篇科研论文并追踪原文证据",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "scientific-translation",
+      "display_name_zh": "科研论文忠实翻译",
+      "purpose_zh": "忠实翻译科研与学术材料",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": false,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "scientific-writing",
+      "display_name_zh": "科学论文写作",
+      "purpose_zh": "依据真实研究材料起草科研文本",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "medium",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": false,
+        "cost_or_quota": false
+      },
+      "dependencies": [],
+      "invocation_policy": "narrow-auto-or-explicit",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "research-source-acquisition",
+      "display_name_zh": "科研数据与论文获取",
+      "purpose_zh": "寻找并记录论文全文或研究数据的获取证据",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": true,
+        "external_state": true,
+        "cost_or_quota": true
+      },
+      "dependencies": [
+        "PowerShell 7+（仅在使用国家统计局公开数据辅助脚本时需要）",
+        "可选 Skill：academic-literature-search、dryad-data-fetcher、web-tool-router、pdf",
+        "受限来源所需账号、机构权限或付费订阅必须由用户自行合法提供"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "asreview-screening-v3",
+      "display_name_zh": "系统综述智能筛选",
+      "purpose_zh": "使用 ASReview 3 辅助题录筛选",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": true,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "Python 3.10+（仅在用户明确授权安装或真实运行时需要）",
+        "ASReview 3.x（执行当日核对官方版本并安装到隔离环境）"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "research-reproducibility-auditor",
+      "display_name_zh": "科研复现审计",
+      "purpose_zh": "审计方法、分析项目与复现条件",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": true,
+        "cost_or_quota": true
+      },
+      "dependencies": [],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "dryad-data-fetcher",
+      "display_name_zh": "Dryad 数据获取",
+      "purpose_zh": "列出或下载公开 Dryad 数据文件",
+      "release": "v0.1.0",
+      "platforms": [
+        "windows"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": true,
+        "cost_or_quota": true
+      },
+      "dependencies": [
+        "Windows 10/11（当前发布测试平台）",
+        "PowerShell 7+",
+        "可选：用户自行安装并连接的 OpenCLI（仅 Anubis 浏览器验证回退）"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    }
+  ]
+}

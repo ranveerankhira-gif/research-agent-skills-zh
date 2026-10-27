@@ -1,0 +1,6 @@
+interface:
+  display_name: "科学论文写作"
+  short_description: "依据真实研究材料起草科学论文，并保持证据、数字、方法和声明可追溯"
+  default_prompt: "使用 $scientific-writing 根据已提供或已核验的研究材料起草论文内容，并明确标记所有缺失或待核验信息。"
+policy:
+  allow_implicit_invocation: true

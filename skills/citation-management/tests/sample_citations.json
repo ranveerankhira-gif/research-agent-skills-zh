@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Wang2024",
+    "type": "article-journal",
+    "title": "A Reproducible Example",
+    "author": [{"family": "Wang", "given": "Li"}],
+    "issued": {"date-parts": [[2024]]},
+    "container-title": "Journal of Examples",
+    "DOI": "https://doi.org/10.1234/Example.001?utm_source=test",
+    "URL": "https://example.org/article?utm_source=test&view=full",
+    "_audit": {
+      "verification_status": "待核验",
+      "metadata_source": "用户提供",
+      "checked_at": "",
+      "notes": []
+    }
+  },
+  {
+    "id": "Wang2024duplicate",
+    "type": "article-journal",
+    "title": "A Reproducible Example",
+    "author": [{"family": "Wang", "given": "Li"}],
+    "issued": {"date-parts": [[2024]]},
+    "DOI": "doi:10.1234/example.001"
+  },
+  {
+    "id": "Chen2023",
+    "type": "report",
+    "title": "Evidence Mapping in Practice",
+    "author": [{"family": "Chen", "given": "Ming"}],
+    "issued": {"date-parts": [[2023]]},
+    "URL": "https://example.net/report"
+  }
+]

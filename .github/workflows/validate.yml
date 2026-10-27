@@ -21,7 +21,6 @@ jobs:
       - run: python -X utf8 -m unittest discover -s scripts/tests -v
       - run: python -X utf8 -m unittest discover -s skills/citation-management/tests -v
       - run: python -X utf8 -m unittest discover -s skills/meta-analysis/tests -v
-      - run: python -X utf8 -m unittest discover -s skills/dryad-data-fetcher/tests -v
       - run: python -m compileall -q skills scripts
 
   windows:

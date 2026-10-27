@@ -25,7 +25,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT (adapted; see local license/source files)",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "b27712b1ed53da6a080081f7d94c42794480622700b1cfa9c7d5062cb65eb19d"
     },
     {
       "name": "citation-analysis",
@@ -50,7 +50,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT (adapted; see local license/source files)",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "36a4eda49597c32127a4f7e2e8d8c83cd92fb0343318f2309db81230443048ee"
     },
     {
       "name": "citation-management",
@@ -75,7 +75,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "197ae370df7dade7f9f04b91f021d271946c813026862f76181c05d0227bc7f7"
     },
     {
       "name": "literature-evidence-checker",
@@ -100,7 +100,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "85db11e972b23d61a79a17e45e16752a27bf54c0393aafd55afd14609e1ea370"
     },
     {
       "name": "literature-review",
@@ -127,7 +127,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "ff56680b3202f942178a2d2adfe0f5b2fb438109d16e5a1d94a7b364353b07ef"
     },
     {
       "name": "publication-integrity-check",
@@ -150,7 +150,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "74cdd27f82c4457c28142da4d1f07c93bb883cebf2bb49b068df94e991e86ab1"
     },
     {
       "name": "causal-inference-analysis",
@@ -173,7 +173,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "85348e3e5f3ffd89538c82330a62b62065835c061828a70bb7f15c03bdcf857d"
     },
     {
       "name": "meta-analysis",
@@ -198,7 +198,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "f35c73a5154751f9ac3bbc425def4cdbd259ff82ccb43f986ef9c3e72eb74335"
     },
     {
       "name": "qualitative-research-analysis",
@@ -221,7 +221,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "830d03b5cbc18ee71d699c118db9c0a414ea5193e9c8d594e309fa70729da003"
     },
     {
       "name": "research-ethics-consent",
@@ -244,7 +244,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "b6eede5c4c0cac636939974dd12227595f798f460f5e64c8c3c1c1435504520c"
     },
     {
       "name": "survey-and-psychometrics",
@@ -267,7 +267,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "cfa8cb5db375383a8149474de564484e31eb32e70ae212d04d34277e4943d830"
     },
     {
       "name": "paper-review-reviser",
@@ -290,7 +290,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "baf610b5edf6ddb14f561a41877ebf7e611e420580f6dceae5273569edf25ec2"
     },
     {
       "name": "research-prose-naturalizer",
@@ -313,7 +313,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "a4d9354e98b67a1b45cf65ad8f767f24eeff0848d5ba105b38c8f57760597a91"
     },
     {
       "name": "research-workflow",
@@ -336,7 +336,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "57898436104c0095ce2ed6df8c2cb2b69bed26d9959b5c0c9a50abd5dade23a3"
     },
     {
       "name": "scientific-critical-thinking",
@@ -359,7 +359,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT (adapted; see local license/source files)",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "4c344f8e694447059de74f10b7de8826ca6bd20c551799eb375ee1e42aabb4fe"
     },
     {
       "name": "scientific-paper-reading",
@@ -382,7 +382,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "48640e7de6e83143365ed08bfbd86195f192ab8fea9af0962d07b6099874ee4e"
     },
     {
       "name": "scientific-translation",
@@ -405,7 +405,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "d7f1e4bbd43c9508702426d075cf4a3542360ec2c5ba0781ad3f0b332433106b"
     },
     {
       "name": "scientific-writing",
@@ -428,7 +428,7 @@
       "invocation_policy": "narrow-auto-or-explicit",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "07c56e5c594257f76eb5b0b14a5dd801c992eda115cf5cb5837af19ff3e67b11"
     },
     {
       "name": "research-source-acquisition",
@@ -455,7 +455,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "bc775391c95d22ffd921c00057c09a73534dd8e8fdd59cd19ac79967ba99bd89"
     },
     {
       "name": "asreview-screening-v3",
@@ -481,7 +481,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "d6fdbc229fd8be2bc204536a3d05cbeba615eb1e675b7c7bee7f3073978d602f"
     },
     {
       "name": "research-reproducibility-auditor",
@@ -504,7 +504,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "a971812a0599b9fa366202de9ddbd25377fff9e4f4e15493809dc553c1aa655b"
     },
     {
       "name": "dryad-data-fetcher",
@@ -531,7 +531,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "0693b9b66ba1a713d66a84b4e31ba19d3ca356112b314570e3bf64589a59d34c"
     }
   ]
 }

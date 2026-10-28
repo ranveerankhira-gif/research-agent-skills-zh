@@ -1,12 +1,30 @@
 # 科研智能体 Skills
 
-一套中文优先、证据边界清晰、可审计的科研 Agent Skills，覆盖从文献检索到论文写作的完整研究流程。
+**让 Codex 从“帮我找几篇论文”升级为可追溯、可复核的科研工作流。**
 
-> Chinese-first, auditable agent skills for literature discovery, evidence checking, research methods, reproducibility, and scientific writing.
+这里有 22 个中文优先的科研 Agent Skills，覆盖文献检索、系统综述、研究设计、统计与质性分析、证据评价、论文阅读、翻译和写作。它们不会把题录冒充全文、把相关性写成因果，或凭空补出引用。
+
+> 22 Chinese-first Codex skills for traceable literature discovery, evidence checking, research methods, reproducibility, and evidence-grounded scientific writing.
 
 [![Skills](https://img.shields.io/badge/skills-22-2563eb)](#skill-目录)
+[![Latest release](https://img.shields.io/github/v/release/ranveerankhira-gif/research-agent-skills-zh?label=release)](https://github.com/ranveerankhira-gif/research-agent-skills-zh/releases/latest)
+[![Validate](https://github.com/ranveerankhira-gif/research-agent-skills-zh/actions/workflows/validate.yml/badge.svg)](https://github.com/ranveerankhira-gif/research-agent-skills-zh/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
 [![Provenance](https://img.shields.io/badge/provenance-audited-7c3aed)](provenance.json)
+
+## 30 秒找到适合你的 Skill
+
+| 你现在想做什么 | 从这里开始 |
+|---|---|
+| 找论文，但不想收到编造的 DOI | [`academic-literature-search`](skills/academic-literature-search) |
+| 做系统综述或范围综述 | [`literature-review`](skills/literature-review) |
+| 核对引用是否真的支持正文 | [`literature-evidence-checker`](skills/literature-evidence-checker) |
+| 合并多项研究并解释异质性 | [`meta-analysis`](skills/meta-analysis) |
+| 判断观察性研究能否支持因果结论 | [`causal-inference-analysis`](skills/causal-inference-analysis) |
+| 深读、翻译或修改一篇论文 | [`scientific-paper-reading`](skills/scientific-paper-reading) · [`scientific-translation`](skills/scientific-translation) · [`paper-review-reviser`](skills/paper-review-reviser) |
+| 不确定该用哪个科研 Skill | [`research-workflow`](skills/research-workflow) |
+
+**立即使用：**前往 [最新 Release](https://github.com/ranveerankhira-gif/research-agent-skills-zh/releases/latest)，下载单个 Skill 或完整合集，并用同一页面的 `SHA256SUMS.txt` 核对文件。
 
 ## 为什么建立这个仓库
 
@@ -55,7 +73,7 @@
 
 ## 安装
 
-正式发布后，优先从 GitHub Releases 下载固定版本资产并核对 `SHA256SUMS.txt`，不要长期依赖会变化的分支 ZIP。
+优先从 [GitHub Releases](https://github.com/ranveerankhira-gif/research-agent-skills-zh/releases/latest) 下载固定版本资产并核对 `SHA256SUMS.txt`，不要长期依赖会变化的分支 ZIP。
 
 ### 安装单个 Skill
 
@@ -106,4 +124,8 @@ python -X utf8 -m unittest discover -s scripts/tests -v
 ```
 
 私有拒绝词清单可以通过 `PUBLICATION_DENYLIST_FILE` 指向仓库外文件；该清单本身不得提交。
+
+---
+
+如果这些 Skill 帮你少查错一条引用、少走一次研究弯路，欢迎点一个 ⭐。它会帮助更多需要中文科研工作流的人发现这个项目。
 
